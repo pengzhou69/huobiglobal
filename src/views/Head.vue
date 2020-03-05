@@ -28,20 +28,23 @@
           /></a>
         </h1>
       </MenuItem>
-      <MenuItem name="1">
+      <MenuItem name="1" to="/quotation">
         行情
       </MenuItem>
-      <MenuItem name="2">
+      <MenuItem name="2" to="/fbtransaction">
         法币交易
       </MenuItem>
-      <MenuItem name="3">
+      <MenuItem name="3" to="/cointrading">
         币币交易
       </MenuItem>
-      <MenuItem name="4">
+      <MenuItem name="4" to="/cross-margin">
         杠杆交易
       </MenuItem>
-      <MenuItem name="5">
-        合约交易
+      <MenuItem name="5" id="choseA">
+        <!-- <a href="#contracttransaction" target="_black"></a> -->
+        <router-link to="/contracttransaction" target="_blank"
+          ><p>合约交易</p></router-link
+        >
       </MenuItem>
       <MenuItem name="6" class="menus_changjiang" to="/college">
         成长学院
@@ -49,17 +52,41 @@
 
       <div id="menus" style="float:right;">
         <div class="DengLU" style="float:left">
-          <!-- <a target="_black" href="javascript:;">登录</a> -->
           <router-link to="/pzhcs">登录</router-link>
         </div>
         <MenuItem name="6">
-          <Button type="primary" size="small" ghost>注册</Button>
+          <Button type="primary" size="small" ghost>
+            <router-link to="/zcdl">注册</router-link>
+          </Button>
           <div class="PPD" style="float:right">
-            <a href="javascript:;">下载</a>
+            <Dropdown id="PPD_1">
+              <div class="DDD">
+                <a href="javascript:void(0)">
+                  下载
+                </a>
+              </div>
+
+              <DropdownMenu slot="list">
+                <DropdownItem>
+                  <div class="fedui-download">
+                    <img src="../assets/2222.jpg" alt="" />
+                  </div>
+                  <div class="fedui-header-download-qrtext">
+                    <p>扫码下载 APP</p>
+                    <p><strong>iOS &amp; Android</strong></p>
+                    <div class="PPPP">
+                      <a href="javascript:;">
+                        查看全部 <i class="fedui-icon-youjiantou"></i
+                      ></a>
+                    </div>
+                  </div>
+                </DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
           </div>
         </MenuItem>
 
-        <Submenu name="33">
+        <Submenu name="36">
           <template slot="title">简体中文</template>
           <a class="menus" href="#">English</a
           ><a class="menus active" href="#">简体中文</a>
@@ -86,8 +113,7 @@
               <a
                 data-type="kr"
                 rel="noopener noreferrer nofollow"
-                target="_blank"
-                href="https://www.huobi.co.kr/zh-CN/"
+                href="javascript:;"
                 >火币韩国</a
               >
             </dd>
@@ -95,8 +121,7 @@
               <a
                 data-type="mena"
                 rel="noopener noreferrer nofollow"
-                target="_blank"
-                href="https://www.huobix.io"
+                href="javascript:;"
                 >火币中东</a
               >
             </dd>
@@ -105,19 +130,17 @@
             <dt class="fedui-line-1">集团生态服务</dt>
             <dd>
               <a
-                href="https://www.huobiinfo.com/"
+                href="javascript:;"
                 rel="noopener noreferrer nofollow"
                 data-type="info"
-                target="_blank"
                 >火币资讯</a
               >
             </dd>
             <dd>
               <a
-                href="https://www.hpt.com/pow/?lang=cn"
+                href="javascript:;"
                 rel="noopener noreferrer nofollow"
                 data-type="pow"
-                target="_blank"
                 >火币矿池</a
               >
             </dd>
@@ -125,8 +148,7 @@
               <a
                 rel="noopener noreferrer nofollow"
                 data-type="chat"
-                href="https://www.huobichat.com/zh-cn/"
-                target="_blank"
+                href="javascript:;"
                 >火信</a
               >
             </dd>
@@ -134,36 +156,31 @@
               <a
                 data-type="wallet"
                 rel="noopener noreferrer nofollow"
-                href="https://www.huobiwallet.com/zh/"
-                target="_blank"
+                href="javascript:;"
                 >火币钱包</a
               >
             </dd>
             <dd>
               <a
-                href="https://china.huobi.cn/#/home"
+                href="javascript:;"
                 data-type="cn"
                 rel="noopener noreferrer nofollow"
-                target="_blank"
                 >火币中国</a
               >
             </dd>
             <dd>
-              <a data-type="capital" target="_blank" href="/zh-cn/capital/"
-                >火币资本</a
-              >
+              <a data-type="capital" href="javascript:;">火币资本</a>
             </dd>
             <dd>
-              <a href="//eco.huobi.io" data-type="eco" target="_blank" class=""
+              <a href="javascript:;" data-type="eco" class=""
                 >火币全球生态基金</a
               >
             </dd>
             <dd>
               <a
                 data-type="cloud"
-                target="_blank"
                 rel="noopener noreferrer nofollow"
-                href="https://www.huobicloud.com/zh-cn/"
+                href="javascript:;"
                 >火币云</a
               >
             </dd>
@@ -282,7 +299,7 @@ a.menus:hover {
 .ivu-select-prefix i {
   margin: 10px 12px;
 }
-.ivu-input {
+#head .ivu-input {
   height: 36px;
 }
 .ivu-btn-ghost.ivu-btn-primary {
@@ -311,16 +328,8 @@ a.menus:hover {
 .PPD a:hover {
   color: #fff;
 }
-.PPD a:before {
-  content: "";
-  position: absolute;
-  left: 97px;
-  top: 50%;
-  margin-top: -12px;
-  background: rgba(97, 105, 138, 0.3);
-  height: 24px;
-  width: 1px;
-  overflow: hidden;
+#menus .fedui-header-download-qrtext:before {
+  left: 147px;
 }
 .ivu-icon-ios-arrow-down:before {
   content: "";
@@ -382,6 +391,9 @@ a.menus:hover {
 #menus .ivu-select-dropdown {
   width: 320px;
 }
+.ivn-dropdown.ivu-select-dropdown {
+  width: 278px;
+}
 .lang_group {
   display: inline-block;
   width: 45%;
@@ -400,6 +412,61 @@ a.menus:hover {
 #head .ivu-menu-horizontal .ivu-menu-item,
 #head .ivu-menu-horizontal .ivu-menu-submenu {
   padding: 0px 14px;
+}
+#head .fedui-header-download {
+  width: 106px;
+  height: 106px;
+  float: left;
+  overflow: hidden;
+  border: 1px solid red;
+  margin-left: -11px;
+  padding-left: 16px;
+  margin-top: -6px;
+  text-align: center;
+  position: relative;
+}
+#head .fedui-header-download::before {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0%;
+  margin-top: 0px;
+  background: transparent;
+  height: 0px;
+  width: 0px;
+}
+.fedui-header-download-qrtext p {
+  text-indent: 66px;
+}
+.fedui-header-download-qrtext::before {
+  content: "";
+  position: absolute;
+  left: 124px;
+  top: 50%;
+  top: 0;
+  background: rgba(97, 105, 138, 0.3);
+  height: 120px;
+  width: 1px;
+  overflow: hidden;
+}
+.fedui-header-download-qrtext a {
+  margin-left: 67px;
+}
+.fedui-download {
+  width: 100px;
+  height: 100px;
+  float: left;
+  overflow: hidden;
+}
+.ivu-dropdown-item {
+  padding: 8px 9px;
+}
+#choseA p:hover {
+  color: #fff;
+}
+#choseA p {
+  color: rgba(255, 255, 255, 0.7);
 }
 .DT-enter-active {
   animation: run 0.3s;

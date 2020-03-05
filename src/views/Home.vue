@@ -9,7 +9,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import Head from "./Head";
 import Foot from "./Footer";
 

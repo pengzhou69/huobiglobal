@@ -66,7 +66,7 @@ a.menus {
   line-height: 30px;
   padding: 0 12px;
   display: inline-block;
-  color: #1c242c;
+  /* color: #1c242c; */
   vertical-align: top;
 }
 a.active {

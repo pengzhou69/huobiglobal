@@ -1,5 +1,5 @@
 <template>
-  <section class="main" style="position:relative;top:-48px">
+  <section class="main" style="position:relative;top:-48px" id="college">
     <section class="novice-camp page" data-v-8f363b12="" data-v-5366b2a1="">
       <div class="novice-banner" data-v-8f363b12="">
         <div class="register-qr-box" data-v-8f363b12="">
@@ -324,7 +324,7 @@
       <div class="fixed-qr-box" data-v-8f363b12="">
         <div class="qr-box" data-v-8f363b12="">
           <img
-            src="../../assets/2222.jpg"
+            src="../../assets/2223.jpg"
             class="register-qr"
             style=""
             data-v-8f363b12=""
@@ -361,26 +361,29 @@ export default {};
 .menu-tab {
   text-align: center;
 }
-.ivu-tabs-nav-scroll {
+#college .ivu-tabs-nav-scroll {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
-  left: 50%;
-  margin-left: -40%;
+  /* left: 50%; */
+  /* margin-left: -40%; */
 }
-.ivu-tabs-nav .ivu-tabs-tab {
+#college .ivu-tabs-nav {
+  float: none;
+}
+#college .ivu-tabs-nav .ivu-tabs-tab {
   height: max-content;
   padding: 26px 16px;
   margin-right: 16px;
   font-size: 17px;
   width: 300px;
 }
-.csk {
+#college .csk {
   height: 650px;
   width: 1531.5px;
 }
-.novice-camp .novice-info[data-v-8f363b12] {
+#college .novice-camp .novice-info[data-v-8f363b12] {
   width: 1228px;
   margin: 80px auto 0;
 }

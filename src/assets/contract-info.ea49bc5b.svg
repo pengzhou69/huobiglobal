@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>合约信息svg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="合约信息" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="09结算记录-永续" transform="translate(-360.000000, -94.000000)">
+            <g id="导航">
+                <g id="二级导航" transform="translate(360.000000, 74.000000)">
+                    <g id="合约信息" transform="translate(0.000000, 20.000000)">
+                        <rect id="矩形-copy-44" fill="#1B2946" fill-rule="nonzero" x="0" y="0" width="20" height="20"></rect>
+                        <path d="M-5.68434189e-14,0 L6.25,0 L16.25,0 L16.25,20 L-5.68434189e-14,20 L-5.68434189e-14,6.25 L-5.68434189e-14,0 Z M7.75,1.5 L1.5,1.5 L1.5,7.75 L1.5,18.5 L14.75,18.5 L14.75,1.5 L7.75,1.5 Z" id="矩形" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <polygon id="矩形" fill="#1B2946" fill-rule="nonzero" points="6.5 9 20 9 20 21.25 6.5 21.25"></polygon>
+                        <path d="M13,11 C15.7614237,11 18,13.2385763 18,16 C18,17.1098956 17.6383654,18.1353268 17.0264988,18.9648911 L19.0019805,20.9413203 L17.9413203,22.0019805 L15.9648911,20.0264988 C15.1353268,20.6383654 14.1098956,21 13,21 C10.2385763,21 8,18.7614237 8,16 C8,13.2385763 10.2385763,11 13,11 Z M13,12.5 C11.0670034,12.5 9.5,14.0670034 9.5,16 C9.5,17.9329966 11.0670034,19.5 13,19.5 C14.9329966,19.5 16.5,17.9329966 16.5,16 C16.5,14.0670034 14.9329966,12.5 13,12.5 Z" id="形状结合" fill="#357CE1"></path>
+                        <rect id="矩形" fill="#FFFFFF" x="3" y="4" width="10" height="1.5"></rect>
+                        <rect id="矩形" fill="#FFFFFF" x="3" y="8" width="6" height="1.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
